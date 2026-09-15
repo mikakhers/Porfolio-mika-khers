@@ -134,4 +134,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  /* ---------- Interactive project selector (page projets) ---------- */
+  const tabs = document.querySelectorAll('.project-tab');
+  const panels = document.querySelectorAll('.case-study-panel');
+  if (tabs.length && panels.length) {
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-target');
+        tabs.forEach(t => {
+          t.classList.toggle('active', t === tab);
+          t.setAttribute('aria-pressed', t === tab ? 'true' : 'false');
+        });
+        panels.forEach(p => p.classList.toggle('active', p.id === target));
+      });
+    });
+  }
+
 });
