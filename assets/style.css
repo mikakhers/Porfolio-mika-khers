@@ -739,3 +739,19 @@ footer {
   align-items: center;
   justify-content: center;
 }
+#home-binome {
+  border-color: rgba(147,197,114,0.5);
+  background: linear-gradient(160deg, rgba(147,197,114,0.10), transparent 45%);
+}
+#home-binome:hover {
+  border-color: #93C572;
+  box-shadow: 0 14px 44px -22px rgba(147,197,114,0.5);
+}
+.btn-pistache {
+  background: linear-gradient(135deg, #6FA050 0%, #93C572 100%);
+  color: #fff;
+}
+.btn-pistache:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -8px rgba(147,197,114,0.55);
+}
