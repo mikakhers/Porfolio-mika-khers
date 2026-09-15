@@ -716,3 +716,26 @@ footer {
   margin-bottom: 24px;
 }
 .contact-photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ==========================================================================
+   BINÔME — cadre en pistache (couleur de marque du projet, isolée du thème)
+   ========================================================================== */
+#case-binome .case-study {
+  border-color: rgba(147,197,114,0.5);
+  background: linear-gradient(160deg, rgba(147,197,114,0.10), transparent 45%);
+}
+#case-binome .case-study:hover {
+  border-color: #93C572;
+  box-shadow: 0 14px 44px -22px rgba(147,197,114,0.5);
+}
+#case-binome .status-pill {
+  color: #93C572;
+  border-color: #93C572;
+}
+#case-binome .feature-list svg path {
+  stroke: #93C572;
+}
+#case-binome .case-visual {
+  align-items: center;
+  justify-content: center;
+}
